@@ -16,33 +16,35 @@ import SingleBlogPage2 from "./pages/single-blog/SingleBlogPage2";
 import SingleBlogPage3 from "./pages/single-blog/SingleBlogPage3";
 import { SearchProvider } from "./components/SearchContext/SearchContext ";
 import { useSearch } from "./components/SearchContext/SearchContext ";
-import TermsPage from './pages/terms/TermsPage';
+import TermsPage from "./pages/terms/TermsPage";
 
 function App() {
-
   return (
     <SearchProvider>
-    <BrowserRouter>
-      <Routes>
-        <Route element={<Layout />}>
-          <Route index element={<HomePage />} />
-          <Route path="cars" element={<CarsPage />} />
-          <Route path="cars/:id" element={<SingleCarPage />} />
-          <Route path="brands" element={<BrandsPage />} />
-          <Route path="brands/:id" element={<SingleBrandPage />} />
-          <Route path="services/uslugbuggies" element={<UslugBuggiesPage />} />
-          <Route path="services/uslugcar" element={<UslugCarPage />} />
-          <Route path="services" element={<ServicePage />} />
-          <Route path="about" element={<AboutPage />} />
-          <Route path="contact" element={<ContactPage />} />
-          <Route path="blog" element={<BlogPage />} />
-          <Route path="blog/singleblog" element={<SingleBlogPage />} />
-          <Route path="blog/singleblog2" element={<SingleBlogPage2 />} />
-          <Route path="blog/singleblog3" element={<SingleBlogPage3 />} />
-          <Route path="conditions" element={<TermsPage />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+      <BrowserRouter>
+        <Routes>
+          <Route element={<Layout />}>
+            <Route index element={<HomePage />} />
+            <Route path="cars" element={<CarsPage />} />
+            <Route path="cars/:id" element={<SingleCarPage />} />
+            <Route path="brands" element={<BrandsPage />} />
+            <Route path="brands/:id" element={<SingleBrandPage />} />
+            <Route
+              path="services/uslugbuggies"
+              element={<UslugBuggiesPage />}
+            />
+            <Route path="services/uslugcar" element={<UslugCarPage />} />
+            <Route path="services" element={<ServicePage />} />
+            <Route path="about" element={<AboutPage />} />
+            <Route path="contact" element={<ContactPage />} />
+            <Route path="blog" element={<BlogPage />} />
+            <Route path="blog/singleblog" element={<SingleBlogPage />} />
+            <Route path="blog/singleblog2" element={<SingleBlogPage2 />} />
+            <Route path="blog/singleblog3" element={<SingleBlogPage3 />} />
+            <Route path="conditions" element={<TermsPage />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </SearchProvider>
   );
 }
