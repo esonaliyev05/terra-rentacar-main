@@ -39,7 +39,9 @@ const BrandsPage = () => {
   return (
     <section className="bg-[#111219] min-h-screen py-10">
       <div className="max-w-[1200px] mx-auto px-5">
-        <h1 className="font-serif uppercase text-4xl text-white mb-10">Brands</h1>
+        <h1 className="font-serif uppercase text-4xl text-white mb-10">
+          Brands
+        </h1>
         <Swiper
           breakpoints={{
             320: { slidesPerView: 2, spaceBetween: 10 },
