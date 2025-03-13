@@ -1,0 +1,62 @@
+.navbar {
+  width: 100%;
+  background: linear-gradient(
+    to right,
+    rgb(53, 17, 17) 0%,
+    #0e0d0d 20%,
+    #111219 50%,
+    #1b1616 80%,
+    rgb(53, 17, 17) 100%
+  );
+  background-size: 300% 100%;
+  animation: gradientMove 8s linear infinite , shadowChange 3s infinite alternate ease-in-out;
+  
+  @keyframes gradientMove {
+    0% {
+      background-position: 200% 50%;
+    }
+    50% {
+      background-position: 50% 50%;
+    }
+    100% {
+      background-position: 200% 50%;
+    }
+  }
+
+  @keyframes shadowChange {
+    0% {
+      box-shadow: 0 10px 15px #0b2d2c;
+    }
+    100% {
+      box-shadow: 0 10px 15px #450608;
+    }
+  }
+}
+
+.search-container {
+  width: 300px; // O'lchamni o'zgartirish mumkin
+  position: relative;
+}
+
+.search-input {
+  color: white;
+  background: linear-gradient(to right, #2c2d30 0%, #111219 100%);
+  transition: all 0.3s ease;
+
+  &:focus {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+  }
+}
+
+
+
+
+
+.footer{
+  background-color: #111219;
+}
+
+.overlay{
+  background-color: black;
+  opacity: 0.6;
+}
